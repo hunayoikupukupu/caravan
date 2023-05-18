@@ -63,7 +63,7 @@ header .heading { /*headerタグ内のheadingクラスのみに反映される*/
   display: flex; /*Flexboxの利用*/
   justify-content: center; /*子要素の横並び・中央寄せ*/
   margin: 0 auto; /*中央寄せ（左右に余白がないとできない）*/
-  padding: 70px; /*上下に70px、左右に0pxの内側余白*/
+  padding: 70px 0; /*上下に70px、左右に0pxの内側余白*/
 }
 
 .blog {
@@ -77,10 +77,33 @@ header .heading { /*headerタグ内のheadingクラスのみに反映される*/
   line-height: 0.6;
 }
 
+.blog-box {
+  padding-top: 50px;
+}
+
 .blog-item {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #f7f7f7;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.blog-image {
+  height: 180px;
+}
+
+.blog-text {
+  padding: 25px 0 0 30px;
+}
+
+.blog-text-heading {
+  padding-bottom: 15px;
+}
+
+.blog-date {
+  font-size: 12px;
+  display: inline-block;
 }
 
 .category {
